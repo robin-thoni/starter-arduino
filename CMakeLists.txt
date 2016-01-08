@@ -8,5 +8,5 @@ set(${CMAKE_PROJECT_NAME}_PORT /dev/ttyUSB0)
 
 enable_language(ASM)
 
-set(${CMAKE_PROJECT_NAME}_SKETCH arduinoProject.ino)
+set(${CMAKE_PROJECT_NAME}_SKETCH main.ino)
 generate_arduino_firmware(${CMAKE_PROJECT_NAME})
