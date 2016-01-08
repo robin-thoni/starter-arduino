@@ -3,5 +3,10 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/cmake/ArduinoToolchain.cmake)
 set(PROJECT_NAME arduinoProject)
 project(${PROJECT_NAME})
 
+set(${CMAKE_PROJECT_NAME}_BOARD nano328)
+set(${CMAKE_PROJECT_NAME}_PORT /dev/ttyUSB0)
+
+enable_language(ASM)
+
 set(${CMAKE_PROJECT_NAME}_SKETCH arduinoProject.ino)
 generate_arduino_firmware(${CMAKE_PROJECT_NAME})
