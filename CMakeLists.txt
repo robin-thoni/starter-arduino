@@ -6,6 +6,17 @@ project(${PROJECT_NAME})
 set(${CMAKE_PROJECT_NAME}_BOARD nano328)
 set(${CMAKE_PROJECT_NAME}_PORT /dev/ttyUSB0)
 
+#nano
+#set(${CMAKE_PROJECT_NAME}_BOARD nano328)
+#set(${CMAKE_PROJECT_NAME}_PORT /dev/ttyUSB0)
+
+#mega
+#set(${CMAKE_PROJECT_NAME}_BOARD mega2560)
+#set(${CMAKE_PROJECT_NAME}_PORT /dev/ttyACM0)
+
+# /usr/share/arduino/hardware/arduino/boards.txt
+
+
 enable_language(ASM)
 
 set(${CMAKE_PROJECT_NAME}_SKETCH main.ino)
